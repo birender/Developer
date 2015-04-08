@@ -3,6 +3,10 @@
 <title>Paypal Form </title>
 </head>
 <body>
+Paypal Documentation URL
+<br/> 
+https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/
+<br/>
 https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
 <br/>
 
