@@ -3,6 +3,9 @@
 <title>Paypal Form </title>
 </head>
 <body>
+https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/formbasics/
+<br/>
+
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="donation_form">
 <input type="hidden" name="cmd" value="_xclick">
 <input type="Text" name="item_name" value="General Donation">
