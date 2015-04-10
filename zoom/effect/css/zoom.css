@@ -1,0 +1,27 @@
+		/* styles unrelated to zoom */
+		* { border:0; margin:0; padding:0; }
+		
+		/* optional icon style */
+		.zoomIcon { 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		/* these styles are for the demo, and are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position:static;
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }

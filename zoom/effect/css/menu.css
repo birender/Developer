@@ -1,0 +1,99 @@
+/* Structure -----------------------------------------*/
+
+#coolMenu,
+#coolMenu ul { 
+	list-style: none;
+}
+#coolMenu {
+	float: right;
+	text-align:left;
+	margin: 11px 0 0 0px;
+	padding:0px;
+	height:46px;
+	position:relative;
+	z-index:999999999;
+}
+#coolMenu > li {
+    float: left;
+    font-size: 14px;
+	padding:0 0 0 2px;
+}
+#coolMenu li a {
+	display: block;
+}
+.select_nav{
+	/*color:#ff380b;*/
+}
+.last_nav{
+}
+
+#coolMenu ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+	#z-index: 9999;
+	/*left:245px;*/
+}
+#coolMenu ul li a {
+	width: auto;
+}
+#coolMenu li:hover ul.noJS {
+	display: block; 
+}
+
+
+/* Main menu
+------------------------------------------*/
+#coolMenu {
+	/*font-size: 12px;*/
+}
+#coolMenu > li > a {
+	height:32px;
+	padding:12px 0 1px;
+}
+#coolMenu > li > a span{
+	height: 14px;
+    padding: 13px 10px;
+}
+#coolMenu > li:hover > a {
+	background: url(../images/nav_hover.png);
+	background-position:left top;
+	background-repeat:no-repeat; 
+	color:#FFF;
+}
+#coolMenu > li:hover > a span{
+	background: url(../images/nav_hover.png);
+	background-position: right -55px;
+	background-repeat:no-repeat; 
+}
+
+
+/* --------------------------------------- Submenu------------------------------------------*/
+#coolMenu ul {
+	background:#333333; width: 200px; height: auto; border: 1px solid #000;
+}
+#coolMenu ul li a {
+	color: #FFF;
+	padding: 10px 14px;
+	#width:192px;
+}
+#coolMenu ul li:hover a {
+	background:#222;
+}
+
+
+
+/************************************ Collaps Menu CSS ************************************/
+
+ul#CollapsMenu, ul#CollapsMenu ul { list-style-type:none; margin: 0; padding: 0; color: #505152 }
+ul#CollapsMenu a { display: block; text-decoration: none; }
+ul#CollapsMenu li { margin-top: 1px; padding: 0 0 0 13px; background:url(../images/CollapsMenuBorder.jpg) left bottom repeat-x; }
+ul#CollapsMenu li.BorderNone { background: none; }
+ul#CollapsMenu li a { color: #505152; padding: 0 0 0 13px; font-size: 14px; background:url(../images/CollapsMenuArrow.png) no-repeat; line-height: 40px; }
+ul#CollapsMenu li a:hover { }
+ul#CollapsMenu li ul { padding: 0 0 13px 0; }
+ul#CollapsMenu li ul li { background: none; }
+ul#CollapsMenu li ul li a { color: #8f8e8e; padding-left: 5px; font-size: 12px; background: none; line-height: 21px; }
+ul#CollapsMenu li ul li a:hover,ul#CollapsMenu li ul .current a { padding-left: 5px; font-size: 12px; color: #06a0d7; }
+
+

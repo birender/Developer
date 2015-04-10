@@ -1,0 +1,1417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: Prime Scuba ::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" type="text/css" rel="stylesheet" />
+<link href="css/zoom.css" type="text/css" rel="stylesheet" />
+ 
+<!--[if IE 7]>
+	<link href="css/style-ie7.css" type="text/css" rel="stylesheet" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+	<link href="css/style-ie8.css" type="text/css" rel="stylesheet" media="all" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src='js/jquery.min.js'></script>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<script type="text/javascript" src="http://malsup.github.com/chili-1.7.pack.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<!--Main Slider-->
+<link rel="stylesheet" href="css/anythingslider.css">
+<script src="js/jquery.anythingslider.js"></script>
+<style>
+	#slider { width: 765px; height: 238px; }
+</style>
+<script type="text/javascript">
+	$(function() {	
+		$('#recommended_products').cycle({
+			fx:      'scrollHorz',
+			timeout:  0,
+			prev:    '#prev',
+			next:    '#next',			
+			pagerAnchorBuilder: pagerFactory
+		});
+			function pagerFactory(idx, slide) {
+			var s = idx > 2 ? ' style="display:none"' : '';
+			return '<li'+s+'><a href="#"></a></li>';
+		};
+	});
+	$(function() {	
+		$('#top_seller_products').cycle({
+			fx:      'scrollHorz',
+			timeout:  0,
+			prev:    '#prev_2',
+			next:    '#next_2',
+			pagerAnchorBuilder: pagerFactory
+		});
+			function pagerFactory(idx, slide) {
+			var s = idx > 2 ? ' style="display:none"' : '';
+			return '<li'+s+'><a href="#"></a></li>';
+		};
+	});
+	$(function() {	
+		$('#specials_products').cycle({
+			fx:      'scrollHorz',
+			timeout:  0,
+			prev:    '#prev_3',
+			next:    '#next_3',
+			pagerAnchorBuilder: pagerFactory
+		});
+			function pagerFactory(idx, slide) {
+			var s = idx > 2 ? ' style="display:none"' : '';
+			return '<li'+s+'><a href="#"></a></li>';
+		};
+	});
+	$(function() {	
+		$('#all_brands').cycle({
+			fx:      'scrollHorz',
+			timeout:  0,
+			prev:    '#prev_4',
+			next:    '#next_4',			
+			pagerAnchorBuilder: pagerFactory
+		});
+			function pagerFactory(idx, slide) {
+			var s = idx > 2 ? ' style="display:none"' : '';
+			return '<li'+s+'><a href="#"></a></li>';
+		};
+	});
+
+	// Anything Slider
+	
+	$(function(){
+		$('#slider').anythingSlider();
+	});
+</script>
+<script type="text/javascript" src='js/jquery.zoom.js'></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#ex1').zoom();
+			$('#ex2').zoom({ on:'grab' });
+			$('#ex3').zoom({ on:'click' });
+		});
+</script>
+
+</head>
+<body>
+<!-- start page wrap -->
+<div id="page_wrap"> 
+  <!-- start top head bar -->
+  <div id="top_head_bar">
+    <div class="headbar container">
+      <div class="languge_col FR"><span class="lang_flag"><img src="images/icon_english.png" width="17" height="13" alt="Language" /></span> <span class="lang">language:</span> </div>
+      <div class="curruny_col FR">
+      	<span>Currency :</span>
+        <span>
+        <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+          <option>USD</option>
+          <option>INR</option>
+        </select>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- end top head bar --> 
+  <!-- start header -->
+  <div id="header_wrap">
+    <div class="header container">
+      <div class="logo FL"><a href=""><img src="images/prime_scuba_logo.png" width="215" height="80" alt="Prime Scuba" /></a></div>
+      <div class="live_chat_col FL"><a href=""><img src="images/live_chat.png" width="216" height="75" alt="Prime Scuba" /></a></div>
+      <div class="head_right_col FR">
+        <div class="social_seacrh_col">
+          <div class="top_socail"> <a href=""><img src="images/icon_fb.png" width="18" height="18" alt="Prime Scuba" /></a> <a href=""><img src="images/icon_tweet.png" width="18" height="18" alt="Prime Scuba" /></a> <a href=""><img src="images/icon_g+.png" width="18" height="18" alt="Prime Scuba" /></a> <a href=""><img src="images/icon_p.png" width="18" height="18" alt="Prime Scuba" /></a> <a href=""><img src="images/icon_youtube.png" width="18" height="18" alt="Prime Scuba" /></a> </div>
+          <div class="top_search">
+            <input name="" type="text" value="Search" />
+            <button type="submit"></button>
+          </div>
+        </div>
+        <div class="clearAll"></div>
+        <!-- end social search col -->
+        <div class="acc_col">
+        	<ul>
+            	<li><a href="javascript:;"><span>My account</span></a></li>
+            	<li><a href="javascript:;"><span>My Wishlist</span></a></li>
+            	<li class="mycart_nav_icon"><a href="javascript:;"><span>My cart <div class="cart_icon"><div class="cart_items">0</div></div> </span></a>
+                    <div class="cart_item_container">
+                    <div class="cart_item_container_inner">
+                        <div class="cart_item_head">
+                            <div class="cart_item_price">$15.99</div>
+                            <div class="cart_item_quantity">1 item</div>
+                        </div>
+                        <div class="cart_item_display">
+                            <div class="cart_item_display_row">
+                                <div class="cart_product_image"><a href="javascript:;"><img src="images/cart-img.jpg" width="54" height="54" alt="" /></a></div>
+                                <div class="cart_product_description">
+                                	<a href="javascript:;" class="pro_close_btn"></a>
+                                    <h4><a href="javascript:;">Phantom Aquatics Waterproof Backpack</a></h4>
+                                    <div class="pro_qty">Qty:1</div><div>$15.99</div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                            <div class="cart_item_display_row">
+                                <div class="cart_product_image"><a href="javascript:;"><img src="images/cart-img.jpg" width="54" height="54" alt="" /></a></div>
+                                <div class="cart_product_description">
+                                	<a href="javascript:;" class="pro_close_btn"></a>
+                                    <h4><a href="javascript:;">Phantom Aquatics Waterproof Backpack</a></h4>
+                                    <div class="pro_qty">Qty:1</div><div>$15.99</div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                            <div class="cart_item_display_row">
+                                <div class="cart_product_image"><a href="javascript:;"><img src="images/cart-img.jpg" width="54" height="54" alt="" /></a></div>
+                                <div class="cart_product_description">
+                                	<a href="javascript:;" class="pro_close_btn"></a>
+                                    <h4><a href="javascript:;">Phantom Aquatics Waterproof Backpack</a></h4>
+                                    <div class="pro_qty">Qty:1</div><div>$15.99</div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                            <div class="cart_item_display_row">
+                                <div class="cart_product_image"><a href="javascript:;"><img src="images/cart-img.jpg" width="54" height="54" alt="" /></a></div>
+                                <div class="cart_product_description">
+                                	<a href="javascript:;" class="pro_close_btn"></a>
+                                    <h4><a href="javascript:;">Phantom Aquatics Waterproof Backpack</a></h4>
+                                    <div class="pro_qty">Qty:1</div><div>$15.99</div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </div>
+                        <div class="clearAll"></div>
+                        <div class="cart_item_footer">
+                        	<a href="javascript:;" class="view_cart_bt"></a>
+                            <div class="clearAll"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                </li>
+            	<li><a href="javascript:;"><span>Checkout</span></a></li>
+            </ul>
+                        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header --> 
+  <!-- start navigation -->
+  <div id="nav_wrap">
+    <div class="navgaion container">
+      <ul id="coolMenu">
+        <li><a href="#" class="select_nav"><span>Home</span></a></li>
+        <li> <a href="#"><span>New products</span></a>
+         <!-- <ul class="noJS">
+            <li><a href="#">Products 1</a></li>
+            <li><a href="#">Products 2</a></li>
+            <li><a href="#">Products 3</a></li>
+            <li><a href="#">Products 4</a></li>
+            <li><a href="#">Products 5</a></li>
+          </ul> -->
+        </li>
+        <li><a href="#"><span>Specials</span></a></li>
+        <li><a href="#"><span>Create your own package</span></a></li>
+        <li><a href="#"><span>Gift card</span></a></li>
+        <li><a href="#"><span>Shop by brand</span></a></li>
+        <li><a href="#"><span>About us</span></a></li>
+        <li><a href="#"><span>Contact us</span></a></li>
+        <li><a href="#"><span>Our store</span></a></li>
+      </ul>
+      <div class="clearAll"></div>
+    </div>
+  </div>
+  <!-- end navigation --> 
+  <!--Middle Container-->
+  <div id="middle_container">
+    <div class="container"> 
+      <!--Sidebar Start-->
+      <div id="sidebar"> 
+        <!--Browse Categories-->
+        <div class="browse_categories">
+          <h3>Browse <span>Categories</span></h3>
+          <ul>
+            <li><a href="javascript:;">Essential Equipment </a>
+            	<ul class="drop_down drop_1">
+                	<li>
+                    	<div class="mega_drop_down_wrapper first_drop_down">
+                        	<div class="drop_down_heading">Essential Equipment</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Buoyancy_Compensators.jpg" width="20" height="24" alt="Buoyancy Compensators" /></span> <span class="menulink">Buoyancy Compensators</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Dive_Computers.jpg" width="21" height="24" alt="Dive Computers" /></span> <span class="menulink">Dive Computers</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba_Regulators.jpg" width="24" height="24" alt="Scuba Regulators" /></span> <span class="menulink">Scuba Regulators</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Dive_Gauges.jpg" width="30" height="23" alt="Dive Gauges" /></span> <span class="menulink">Dive Gauges</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba_Octopus.jpg" width="30" height="18" alt="Scuba Octopus" /></span> <span class="menulink">Scuba Octopus</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba_Packages.jpg" width="23" height="24" alt="Scuba Packages" /></span> <span class="menulink">Scuba Packages</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba_Tanks.jpg" width="24" height="24" alt="Scuba Tanks" /></span> <span class="menulink">Scuba Tanks</span></a></li>
+                                </ul>                                
+                                <div class="product_weight_size">
+                                	<span>less than 2kg (4.4 lbs)...</span>
+                                    lose some weight<br />
+                                    on your next vaction.
+                                </div>                            
+                            </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>                                
+                                <div class="drop_1_related_image"><img src="images/product-img-1.png" alt="" /></div>                                
+                          </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Basic Dive Gear</a>
+            	<ul class="drop_down drop_2">
+                	<li>
+                    	<div class="mega_drop_down_wrapper second_drop_down">
+                        	<div class="drop_down_heading">Basic Dive Gear</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Dive-Masks.gif" width="29" height="24" alt="Dive Masks" /></span> <span class="menulink">Dive Masks</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba-Fins.gif" width="27" height="24" alt="Scuba Fins" /></span> <span class="menulink">Scuba Fins</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Snorkels.gif" width="11" height="24" alt="Snorkels" /></span> <span class="menulink">Snorkels</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Snorkel-Packages.gif" width="23" height="24" alt="Snorkel Packages" /></span> <span class="menulink">Snorkel Packages</span></a></li>                                    
+                                </ul>                                
+                                <div class="product_weight_size">
+                                	<span>less than 2kg (4.4 lbs)...</span>
+                                    lose some weight<br />
+                                    on your next vaction.
+                                </div>                            
+                            </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_2_related_image"><img src="images/product-img-2.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Add-On-Gear</a>
+            	<ul class="drop_down drop_3">
+                	<li>
+                    	<div class="mega_drop_down_wrapper third_drop_down">
+                        	<div class="drop_down_heading">Add-On-Gear</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Dive-Lights.gif" width="20" height="24" alt="Dive Lights" /> </span> <span class="menulink">Dive Lights</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Dive-Knives.gif" width="25" height="24" alt="Dive Knives" /></span> <span class="menulink">Dive Knives</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Scuba-Gear-Bags.gif" width="12" height="24" alt="Scuba Gear Bags" /> </span> <span class="menulink">Scuba Gear Bags</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Lift-Bag.gif" width="24" height="24" alt="Lift Bag" /> </span> <span class="menulink">Lift Bag</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Ipod-Mp3-Players.gif" width="30" height="20" alt="Ipod/Mp3 Players" /></span> <span class="menulink">Ipod/Mp3 Players</span></a></li> 
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Reels.gif" width="30" height="16" alt="Reels" /> </span> <span class="menulink">Reels</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Dive-Apparel.gif" width="19" height="24" alt="Dive Apparel" /></span> <span class="menulink">Dive Apparel</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Dry-Bags.gif" width="22" height="24" alt="Dry Bags" /></span> <span class="menulink">Dry Bags</span></a></li>
+                                    <li><a href="javascript:;"><span class="menuicon"><img src="images/drop-down/Waterproof-Cases.gif" width="24" height="24" alt="Waterproof Cases" /></span> <span class="menulink">Waterproof Cases</span></a></li>
+                                </ul>                                                            
+                          </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_3_related_image"><img src="images/product-img-3.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Exposure Protection</a>
+            	<ul class="drop_down drop_4">
+                	<li>
+                    	<div class="mega_drop_down_wrapper fourth_drop_down">
+                        	<div class="drop_down_heading">Exposure Protection</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Drysuits.gif" width="24" height="24" alt="Drysuits" /></span> <span class="menulink">Drysuits</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Wetsuits.gif" width="21" height="24" alt="Wetsuits" /> </span> <span class="menulink">Wetsuits</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Boots.gif" width="29" height="24" alt="Boots" /> </span> <span class="menulink">Boots</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Gloves.gif" width="24" height="24" alt="Gloves" /> </span> <span class="menulink">Gloves</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Hoods.gif" width="21" height="24" alt="Hoods" /> </span> <span class="menulink">Hoods</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Drysuits.gif" width="24" height="24" alt="Drysuit Underwear" /> </span> <span class="menulink">Drysuit Underwear</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Thermal-Protection.gif" width="20" height="24" alt="Thermal Protection &amp; UV-Shirts" /> </span> <span class="menulink">Thermal Protection &amp; UV-Shirts</span></a></li>
+                                </ul>                                
+                                <div class="product_weight_size">
+                                	<span>less than 2kg (4.4 lbs)...</span>
+                                    lose some weight<br />
+                                    on your next vaction.
+                              </div>                            
+                          </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_4_related_image"><img src="images/product-img-4.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Assorted Accessories</a>
+            	<ul class="drop_down drop_5">
+                	<li>
+                    	<div class="mega_drop_down_wrapper fourth_drop_down">
+                        	<div class="drop_down_heading">Assorted Accessories</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Underwater-Scooters.gif" width="23" height="24" alt="Underwater Scooters" /></span> <span class="menulink">Underwater Scooters</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Drysuit-Accessories.gif" width="22" height="24" alt="Drysuit Accessories" /></span> <span class="menulink">Drysuit Accessories</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Weights.gif" width="30" height="23" alt="Weights" /></span> <span class="menulink">Weights</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Analyzers.gif" width="30" height="19" alt="Analyzers" /></span> <span class="menulink">Analyzers</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Education-Guides.gif" width="28" height="24" alt="Education &amp; Guides" /></span> <span class="menulink">Education &amp; Guides</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">BCD Accessories</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">Computer Accessories</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">General Accessories</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">Regulator Accessories</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">Speargun Acc</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"></span> <span class="menulink">Tank Accessories</span></a></li>                                </ul>                          
+                          </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_5_related_image"><img src="images/product-img-5.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Photography</a>
+            	<ul class="drop_down drop_6">
+                	<li>
+                    	<div class="mega_drop_down_wrapper fourth_drop_down">
+                        	<div class="drop_down_heading">Photography</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Cameras.gif" width="28" height="24" alt="Cameras" /></span> <span class="menulink">Cameras</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Camcorders.gif" width="29" height="24" alt="Camcorders" /></span> <span class="menulink">Camcorders</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Underwater-Lighting.jpg" width="24" height="24" alt="Underwater Lighting" /></span> <span class="menulink">Underwater Lighting</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Camera-Acc.gif" width="24" height="24" alt="Camera Acc" /></span> <span class="menulink">Camera Acc,</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Underwater-Housings.gif" width="24" height="24" alt="Underwater Housings" /></span> <span class="menulink">Underwater Housings</span></a></li>
+                                </ul>                          
+                          </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_6_related_image"><img src="images/product-img-6.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">Watersports</a>
+            	<ul class="drop_down drop_7">
+                	<li>
+                    	<div class="mega_drop_down_wrapper fourth_drop_down">
+                        	<div class="drop_down_heading">Watersports</div>
+                            <div class="mega_drop_down_left">
+                                <ul>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Freediving.gif" width="30" height="20" alt="Freediving" /></span> <span class="menulink">Freediving</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Snorkeling.gif" width="30" height="20" alt="Snorkeling" /> </span> <span class="menulink">Snorkeling</span></a></li>
+                                    <li><a href="javascript:;"> <span class="menuicon"><img src="images/drop-down/Swim-Gear.gif" width="30" height="20" alt="Swim Gear" /> </span> <span class="menulink">Swim Gear</span></a></li>
+                                </ul>                          
+                          </div>
+                            <div class="mega_drop_down_right">
+                           	  	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-1.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Surelock&#8482; Weight System</a></div>
+                                </div>
+                            	<div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-2.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Tri-Load Distribution System</a></div>
+                                </div>
+                                <div class="related_images">
+                                	<div class="related_thumbs"><img src="images/img-3.jpg" width="58" height="72" /></div>
+                                    <div class="related_thumbs_detail"><a href="javascript:;">Swivel Buckles</a></div>
+                                </div>
+                                <div class="drop_7_related_image"><img src="images/product-img-7.png" alt="" /></div>
+                            </div>
+                        	<div class="clearAll"></div>
+                        </div>                    
+                    </li>
+                </ul>
+            	
+            </li>
+            <li><a href="javascript:;">Rental</a></li>
+            <li><a href="javascript:;">Training &amp; Education</a></li>
+          </ul>
+        </div>
+        <!--Browse Categories Ends--> 
+        <!--Store Link-->
+        <div class="free_shipping"> <a href="javascript:;">FREE SHIPPING On selected items</a> </div>
+        <div class="our_store"> <a href="javascript:;">OUR STORE Directions and hours</a> </div>
+        <div class="scuba_pros"> <a href="javascript:;">SCUBA PROS Get special offers</a> </div>
+        <!--Store Link Ends--> 
+        <!--Customer Testimonials-->
+        <div class="customer_testimonials">
+          <h3>Customer Testimonials</h3>
+          <div class="customer_testimonials_container"> 
+            <!--Testimonials Listing-->
+            <div class="customer_testimonials_display">
+              <div class="customer_testimonials_top">
+                <div class="customer_testimonials_middle">
+                  <div class="customer_testimonials_bottom">
+                    <p>Good delivery arrived on time and as describedTina L., December 1, 2012</p>
+                    <a href="javascript:;" class="author">Tina L</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--Testimonials Listing--> 
+            <!--Testimonials Listing-->
+            <div class="customer_testimonials_display">
+              <div class="customer_testimonials_top">
+                <div class="customer_testimonials_middle">
+                  <div class="customer_testimonials_bottom">
+                    <p>This seller is outstanding! I am extremely pleased with every aspect of my purchase.</p>
+                    <a href="javascript:;" class="author">Sara</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--Testimonials Listing--> 
+            <!--Testimonials Listing-->
+            <div class="customer_testimonials_display">
+              <div class="customer_testimonials_top">
+                <div class="customer_testimonials_middle">
+                  <div class="customer_testimonials_bottom">
+                    <p>Seller is amazing.. Liked the products</p>
+                    <a href="javascript:;" class="author">Joe. W.</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--Testimonials Listing--> 
+            <!--Testimonials Listing-->
+            <div class="customer_testimonials_display">
+              <div class="customer_testimonials_top">
+                <div class="customer_testimonials_middle">
+                  <div class="customer_testimonials_bottom">
+                    <p>Couldn't believe how fast we received it. Tested a candle to see if really dripless and smokeless - spot on. VERY impressed and will definitely visit them again for future purchases.</p>
+                    <a href="javascript:;" class="author">Kathryh H</a> </div>
+                </div>
+              </div>
+            </div>
+            <!--Testimonials Listing-->
+            <div class="clearAll"></div>
+          </div>
+        </div>
+        <!--Customer Testimonials Ends--> 
+        
+        <!--Newsletter-->
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <div class="get_special_offer"><img src="images/newsletter-get-special-offers.jpg" width="196" height="36" alt="GET SPECIAL OFFERS Join our mailing list" /></div>
+          <div class="newsletter_form">
+            <input type="text" value="enter email address" />
+            <input type="submit" value="Sign Up" />
+          </div>
+        </div>
+        <!--Newsletter Ends--> 
+      </div>
+      <!--Sidebar Ends--> 
+      <!--Right Column-->
+      <div class="right_column"> 
+        <!--Main Slider-->
+        <div class="main_slider">
+            <ul id="slider">            
+                <li><img src="images/slider-img1.jpg" alt=""></li>            
+                <li><img src="images/slider-img2.jpg" alt=""></li>     
+                <li><img src="images/slider-img1.jpg" alt=""></li>            
+                <li><img src="images/slider-img2.jpg" alt=""></li>           
+            </ul>        
+        </div>
+        <!--Main Slider Ends--> 
+        <!--All Brands Slider-->
+        <div class="all_brands_slider"> 
+          <div class="listing_data">
+                <div id="all_brands" class="pics">
+                  <ul>
+                    <li><img src="images/logo_1.jpg" width="118" height="33" alt="" /></li>
+                    <li><img src="images/logo_2.jpg" width="94" height="33" alt="" /></li>
+                    <li><img src="images/logo_3.jpg" width="102" height="33" alt="" /></li>
+                    <li><img src="images/logo_4.jpg" width="68" height="33" alt="" /></li>
+                  </ul>
+                  <ul>
+                    <li><img src="images/logo_1.jpg" width="118" height="33" alt="" /></li>
+                    <li><img src="images/logo_2.jpg" width="94" height="33" alt="" /></li>
+                    <li><img src="images/logo_3.jpg" width="102" height="33" alt="" /></li>
+                    <li><img src="images/logo_4.jpg" width="68" height="33" alt="" /></li>
+                  </ul>
+                  <ul>
+                    <li><img src="images/logo_1.jpg" width="118" height="33" alt="" /></li>
+                    <li><img src="images/logo_2.jpg" width="94" height="33" alt="" /></li>
+                    <li><img src="images/logo_3.jpg" width="102" height="33" alt="" /></li>
+                    <li><img src="images/logo_4.jpg" width="68" height="33" alt="" /></li>
+                  </ul>
+              </div>
+                <div class="next_previous_btn"> <a href="#"><span id="prev_4"></span></a> <a href="#"><span id="next_4"></span></a> </div>
+                <ul id="nav">
+                </ul>
+              </div>
+        
+        	<a class="all_brands" href="javascript:;">All brands</a>
+        
+        </div>
+        <!--All Brands SliderEnds--> 
+        
+        <!--Recommendations for you-->
+            <div class="recommendations_container">
+                <h2>Recommendations for you</h2>        
+                  <div class="listing_data">
+                    <div id="recommended_products" class="pics">
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb zoom" id="ex1"><img src="images/wc1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>               
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>     
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>             
+                    </div>
+                    <div class="next_previous_btn"> <a href="#"><span id="prev"></span></a> <a href="#"><span id="next"></span></a> </div>
+                    <ul id="nav">
+                    </ul>
+                  </div>
+            </div>        
+        <!--Recommendations for you Ends--> 
+        <!--Top Seller Products-->         
+            <div class="top_seller_products_container">
+                <h2>Top Seller Products</h2>            
+                  <div class="listing_data">
+                    <div id="top_seller_products" class="pics">
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                    
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>          
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>     
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>               
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                                   
+                    </div>
+                    <div class="next_previous_btn"> <a href="#"><span id="prev_2"></span></a> <a href="#"><span id="next_2"></span></a> </div>
+                    <ul id="nav">
+                    </ul>
+                  </div>
+            </div>
+        <!--Top Seller Products Ends--> 
+        <!--Specials Products-->         
+            <div class="specials_products_container">
+                <h2>Specials</h2>            
+                  <div class="listing_data">
+                    <div id="specials_products" class="pics">
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                    
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>          
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>     
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-1.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$24.95</span></div>
+                                        <div class="special_price">Special price: <span>$40.95</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>                
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="products_global_list">
+                                <div class="featured_products"></div>
+                                <div class="product_thumb"><img src="images/products-img-3.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto D4i Dive Computer with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$300.00</span></div>
+                                        <div class="special_price">Special price: <span>$250.90</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>               
+                        <li>
+                            <div class="products_global_list">
+                                <div class="product_thumb"><img src="images/products-img-2.jpg" width="126" height="132" /></div>
+                                <div class="product_thumb_description">
+                                    <h4><a href="javascript:;">Suunto Vyper Air with Transmitter</a></h4>
+                                    <div class="products_price">
+                                        <div class="regular_price">Regular price: <span>$1,095.00</span></div>
+                                        <div class="special_price">Special price: <span>$695.00</span></div>
+                                    </div>                                                        
+                                    <div class="product_buttons">
+                                        <a href="javascript:;" class="add_to_cart">Add to Cart</a>
+                                        <a href="javascript:;" class="detail">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="clearAll"></div>
+                            </div>
+                        </li>
+                      </ul>
+                                   
+                    </div>
+                    <div class="next_previous_btn"> <a href="#"><span id="prev_3"></span></a> <a href="#"><span id="next_3"></span></a> </div>
+                    <ul id="nav">
+                    </ul>
+                  </div>
+            </div>
+        <!--Specials Products Ends-->
+        
+        <!--Home Content-->
+        <div class="home_content">
+        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br /><br />
+
+			It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.<br /><br />
+            
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+        </div>
+        <!--Home Content Ends-->        
+      </div>
+      <!--Right Column--> 
+      
+      <!--Bottom Logo-->
+      <div class="bottom_logo">
+        <div class="visa_cards">
+            <div class="cards_holder"><a href="javascript:;"><img src="images/visa-icon.jpg" width="52" height="32" alt="Visa" /></a> </div>
+            <div class="cards_holder"><a href="javascript:;"><img src="images/american-express-icon.jpg" width="52" height="32" alt="American Express" /></a> </div>
+            <div class="cards_holder"><a href="javascript:;"><img src="images/master-card-icon.jpg" width="52" height="32" alt="Master Card" /></a> </div>
+            <div class="cards_holder"><a href="javascript:;"><img src="images/discover-icon.jpg" width="52" height="32" alt="Discover" /></a> </div>                	
+        </div>
+        <div class="paypal_verified"><a href="javascript:;"><img src="images/paypal-verified-icon.jpg" width="70" height="70" alt="Pay pal" /></a></div>
+        <div class="bbb"><a href="javascript:;"><img src="images/bbb-icon.jpg" width="117" height="44" alt="Pay pal" /></a></div>
+        <div class="fidelity"><a href="javascript:;"><img src="images/fidelity-icon.jpg" width="78" height="67" alt="Fidelity" /></a></div>
+        <div class="mcafee"><a href="javascript:;"><img src="images/mcafee-icon.jpg" width="122" height="44" alt="Mcafee" /></a></div>
+                
+      </div>      
+      <!--Bottom Logo Ends--> 
+      
+      
+    </div>
+  </div>
+  <!--End Middle Container--> 
+  
+  <!-- start footer wrap -->
+  	<div id="footer_wrap">
+    	<!-- satrt footer_container-->
+        	<div class="footer_container">
+            	<!-- latest news -->
+                <div class="latest_news_sec">
+               	  <h2 class="box_title">Latest News</h2>
+                    <p class="news_title">Fusce blandit ftelis at erat</p>
+                    <div class="news_box">
+                    	<img src="images/n_img.jpg" width="74" height="74" />
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters....<br />
+                        <a href=""> Read More</a>
+                        </p>
+                     </div> 
+                </div>
+                <!-- end latest news -->
+                <div class="social_link_col">
+                	<h2 class="box_title">Social Links</h2>
+                    <ul class="fotter_info">
+                    	<li><a href=""><img src="images/icon_fb.png" width="18" height="18" alt="Prime Scuba" /> Facebook</a></li>
+                        <li><a href=""><img src="images/icon_tweet.png" width="18" height="18" alt="Prime Scuba" /> Twitter</a></li>
+                        <li><a href=""><img src="images/icon_g+.png" width="18" height="18" alt="Prime Scuba" /> Google +</a></li>
+                        <li><a href=""><img src="images/icon_p.png" width="18" height="18" alt="Prime Scuba" /> Pinterest</a></li>
+                        <li><a href=""><img src="images/icon_youtube.png" width="18" height="18" alt="Prime Scuba" /> Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="help_col">
+                	<h2 class="box_title">Help</h2>
+                    <ul class="fotter_info">
+                    	<li><a href="">FAQ</a></li>
+                        <li><a href="">Return and exchange</a></li>
+                        <li><a href="">Shipping policy</a></li>
+                        <li><a href="">Full manufactures warranty</a></li>
+                        <li><a href="">Site map</a></li>
+                        <li><a href="">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="comp_info">
+                	<h2 class="box_title">Company Information</h2>
+                    <ul class="fotter_info">
+                    	<li><a href="">Our Store</a></li>
+                        <li><a href="">Training and Education</a></li>
+                        <li><a href="">Meet Our Staff</a></li>
+                        <li><a href="">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+                <div class="resorces_col">
+                	<h2 class="box_title">Resources</h2>
+                    <ul class="fotter_info">
+                    	<li><a href="">e-Learning</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Buying guide</a></li>
+                        <li><a href="">Product reviews</a></li>
+                    </ul>
+                </div>                
+            </div>
+        <!-- end footer_container-->
+    </div>
+  <!-- end footer wrap -->
+  <!-- start footer link wrap-->
+  <div class="footer_link_wrap">
+  	<div class="footer_link_container">
+  		<a href="">Home</a>  |  <a href="">New products</a>  |  <a href="">Specials</a>  |  <a href="">Create your own package</a>  |  <a href="">Gift card</a>  |  <a href="">Shop by brand</a>  |  <a href="">About us</a>  |  <a href="">Contact Us</a>  |  <a href="">Our store</a>  |  <a href="">Privacy Policy</a>  |  <a href="">FAQ</a>  |  <a href="">Shipping</a>  |  <a href="">Site Map</a> 
+        <p class="cAlign">Copyright &copy; 2012 <a href="">Prime Scuba</a>. All Rights Reserved</p>
+	</div>
+  </div>
+  <!-- end footer link wrap -->
+</div>
+<!-- end  page wrap -->
+
+<script type="text/javascript">
+	 $("#recommended_products li:last-child").addClass("lastproduct");
+	 $("#top_seller_products li:last-child").addClass("lastproduct");
+	 $("#specials_products li:last-child").addClass("lastproduct");	 
+</script>
+</body>
+</html>
