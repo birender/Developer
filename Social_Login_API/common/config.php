@@ -1,0 +1,1 @@
+<?php	$con	=	mysql_connect("localhost","impinge","admin");	$db		=	mysql_select_db('b_checkintocash',$con) or die(mysql_error());?>	
