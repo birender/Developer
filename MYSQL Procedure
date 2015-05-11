@@ -1,0 +1,9 @@
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `simpleproc`$$
+CREATE DEFINER=``@`%` PROCEDURE `simpleproc`(t int)
+BEGIN
+SELECT * FROM `countries` WHERE country_id = t;
+END$$
+DELIMITER ;
+
+call simpleproc(2);
